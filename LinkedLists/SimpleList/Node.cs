@@ -3,7 +3,7 @@
 public class Node<T>
     
 {
-    public Node(T Data)
+    public Node(T data)
     {
         Data = data;
         Next = null;
