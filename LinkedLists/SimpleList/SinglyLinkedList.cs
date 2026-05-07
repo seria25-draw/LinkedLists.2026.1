@@ -80,4 +80,18 @@ public class SinglyLinkedList<T>
             current = current.Next;
         }
     }
+
+    public void Reverse()
+    {
+        Node<T>? previous = null;
+        var current = _head;
+        while (current != null)
+        {
+            var next = current.Next;
+            current.Next = previous;
+            previous = current;
+            current = next;
+        }
+        _head = previous;
+    }
 }
