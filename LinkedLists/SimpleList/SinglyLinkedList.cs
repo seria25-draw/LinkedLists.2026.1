@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Shared;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SimpleList;
 
-public class SinglyLinkedList<T>
+public class SinglyLinkedList<T> : ILinkedList<T>
 {
     private Node<T>? _head;
 
@@ -14,7 +15,7 @@ public class SinglyLinkedList<T>
     }
     override public string ToString()
     {
-       
+
         var current = _head;
         var result = string.Empty;
         while (current != null)

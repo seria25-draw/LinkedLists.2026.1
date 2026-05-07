@@ -1,9 +1,11 @@
 ﻿
 
+using DoubleList;
 using SimpleList;
 using System.ComponentModel.Design;
 
-var list = new SinglyLinkedList<string>();
+//var list = new SinglyLinkedList<string>();
+var list = new DoubleLinkedList<string>();
 var option = string.Empty;
 var value =string.Empty;
 
