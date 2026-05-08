@@ -49,6 +49,11 @@ public class DoubleLinkedList<T> : ILinkedList<T>
         }
     }
 
+    public void InsertOrdered(T data)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Remove(T data)
     {
         var current = _head;
@@ -84,6 +89,11 @@ public class DoubleLinkedList<T> : ILinkedList<T>
     }
 
     public void Reverse()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void sort(T data)
     {
         throw new NotImplementedException();
     }

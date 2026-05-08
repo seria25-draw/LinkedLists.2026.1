@@ -7,7 +7,11 @@ public interface ILinkedList<T>
     void InsertAtBeginning(T data);
 
     void InsertAtEnd(T data);
+
+    void InsertOrdered(T data);
     void Remove(T data);
+
+    void sort(T data);
 
     void Reverse();
 
